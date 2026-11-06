@@ -1,0 +1,7 @@
+services:
+  flask-app:
+    build: .
+    ports:
+      - "8080:5000"
+  redis-server:
+    image: "redis:latest"
