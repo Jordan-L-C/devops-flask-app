@@ -3,6 +3,7 @@ set -euo pipefail
 
 # 1. Update the machine
 export DEBIAN_FRONTEND=noninteractive
+sudo apt-mark hold firefox
 sudo apt-get update
 sudo apt-get dist-upgrade -y
 
